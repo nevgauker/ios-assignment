@@ -16,6 +16,7 @@
 		BADDC5351FCE925E00B60AD9 /* paykey_ios_interviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDC5341FCE925E00B60AD9 /* paykey_ios_interviewTests.m */; };
 		BADDC5401FCE925E00B60AD9 /* paykey_ios_interviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDC53F1FCE925E00B60AD9 /* paykey_ios_interviewUITests.m */; };
 		BADDC54F1FCE92E400B60AD9 /* HorizontalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDC54E1FCE92E400B60AD9 /* HorizontalTableView.m */; };
+		DC8D55E1207BA6E2003E0975 /* HorizontalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D55E0207BA6E2003E0975 /* HorizontalTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BADDC5411FCE925E00B60AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BADDC54D1FCE92E300B60AD9 /* HorizontalTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableView.h; sourceTree = "<group>"; };
 		BADDC54E1FCE92E400B60AD9 /* HorizontalTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableView.m; sourceTree = "<group>"; };
+		DC8D55DF207BA6E2003E0975 /* HorizontalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalTableViewCell.h; sourceTree = "<group>"; };
+		DC8D55E0207BA6E2003E0975 /* HorizontalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				BADDC51F1FCE925E00B60AD9 /* ViewController.m */,
 				BADDC54D1FCE92E300B60AD9 /* HorizontalTableView.h */,
 				BADDC54E1FCE92E400B60AD9 /* HorizontalTableView.m */,
+				DC8D55DF207BA6E2003E0975 /* HorizontalTableViewCell.h */,
+				DC8D55E0207BA6E2003E0975 /* HorizontalTableViewCell.m */,
 				BADDC5211FCE925E00B60AD9 /* Main.storyboard */,
 				BADDC5241FCE925E00B60AD9 /* Assets.xcassets */,
 				BADDC5261FCE925E00B60AD9 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 				BADDC5201FCE925E00B60AD9 /* ViewController.m in Sources */,
 				BADDC54F1FCE92E400B60AD9 /* HorizontalTableView.m in Sources */,
 				BADDC52B1FCE925E00B60AD9 /* main.m in Sources */,
+				DC8D55E1207BA6E2003E0975 /* HorizontalTableViewCell.m in Sources */,
 				BADDC51D1FCE925E00B60AD9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

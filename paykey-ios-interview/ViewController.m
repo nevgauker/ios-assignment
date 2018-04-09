@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "HorizontalTableView.h"
-
+#import "HorizontalTableViewCell.h"
 @interface ViewController () <HorizontalTableViewDataSource>
 
 @property (strong) HorizontalTableView *horizontalTableView;
@@ -19,17 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.horizontalTableView = [[HorizontalTableView alloc]initWithFrame:CGRectZero];
     [self.view addSubview:self.horizontalTableView];
     self.horizontalTableView.dataSource = self;
     self.horizontalTableView.backgroundColor = [UIColor redColor];
+    //self.horizontalTableView.cellWidth = 55.0f;
 }
 
 
 - (void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
     self.horizontalTableView.frame = CGRectMake(0,100,CGRectGetWidth(self.view.bounds),100);
+    [self.horizontalTableView reloadData];
+
 }
 
 
@@ -44,17 +46,10 @@
     return 100;
 }
 
-- (UIView*)horizontalTableView:(HorizontalTableView*)tableView cellForIndex:(NSInteger)index{
-    
-    
-    UILabel* cell = (UILabel*)[tableView dequeueCell];
-    if (!cell){
-        cell = [[UILabel alloc] init];
-    }
-    cell.text = [@(index) description];
-    cell.textAlignment = NSTextAlignmentCenter;
-    cell.backgroundColor = [UIColor grayColor];
-    
+- (HorizontalTableViewCell*)horizontalTableView:(HorizontalTableView*)tableView cellForIndex:(NSInteger)index{
+    HorizontalTableViewCell* cell = [tableView dequeueCell];
+    cell.text.text = [[NSString alloc] initWithFormat:@"%ld",(long)index];
+    cell.text.textAlignment = NSTextAlignmentCenter;
     return cell;
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HorizontalTableViewCell.h"
 
 @class HorizontalTableView;
 
@@ -21,8 +22,11 @@
 
 @property (weak)   id<HorizontalTableViewDataSource>    dataSource;
 @property (assign) CGFloat                              cellWidth;
+@property (assign) CGFloat                              cellHeight;
+@property (strong) UIScrollView* scrollView;
 
-- (UIView*)dequeueCell;
-
+- (HorizontalTableViewCell*)dequeueCell;
+- (void)reloadData;
+- (id)initWithFrame:(CGRect)frame;
 
 @end
